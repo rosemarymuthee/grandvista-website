@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandVista - Rooms</title>
+    <meta name="description" content="Discover our curated selection of intimate retreats.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header-interior">
+        <div class="container header-container">
+            <a href="index.html" class="logo">GrandVista</a>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="story.html">Our Story</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="events.html">Events</a>
+            </nav>
+            <a href="reservation.html" class="btn btn-primary">Book A Table</a>
+        </div>
+    </header>
+
+    <!-- Rooms Section -->
+    <section class="rooms-section">
+        <div class="container">
+            <span class="subtitle-dark" style="margin-bottom: 0.5rem; display: block;">PRESTIGIOUS LIVING</span>
+            <h1 class="section-title-dark" style="margin-bottom: 0;">Single Rooms</h1>
+            <h2 class="collection-title" style="margin-bottom: 1.5rem;">Collection</h2>
+            <p class="collection-desc">A curated selection of intimate retreats, each meticulously designed<br>with a blend of Parisian charm and contemporary digital minimalism.</p>
+            
+            <div class="rooms-tabs">
+                <button class="room-tab active" data-target="single">SINGLE</button>
+                <button class="room-tab" data-target="double">DOUBLE</button>
+                <button class="room-tab" data-target="family">FAMILY</button>
+                <button class="room-tab" data-target="executive">EXECUTIVE</button>
+            </div>
+
+            <div class="room-content active" id="single">
+                <div class="room-masonry">
+                    <!-- Room 1 -->
+                    <div class="room-masonry-card">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=600&auto=format&fit=crop" alt="The Parisian Nook">
+                        <div class="room-card-header">
+                            <h3 class="room-card-title">The Parisian Nook</h3>
+                            <div class="room-card-line"></div>
+                            <span class="room-card-price">€150</span>
+                        </div>
+                        <p class="room-card-desc">An intimate sanctuary for the solitary flâneur. Features exposed oak beams, velvet cobalt upholstery, and a bespoke writing desk overlooking the Sacré-Cœur, blending heritage with modern stillness.</p>
+                        <div class="room-card-icons">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+                        </div>
+                        <a href="reservation.html" class="btn btn-primary room-card-btn">BOOK NOW</a>
+                    </div>
+                    <!-- Room 2 -->
+                    <div class="room-masonry-card">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=600&auto=format&fit=crop" alt="Cobalt Sanctuary">
+                        <div class="room-card-header">
+                            <h3 class="room-card-title">Cobalt Sanctuary</h3>
+                            <div class="room-card-line"></div>
+                            <span class="room-card-price">€200</span>
+                        </div>
+                        <p class="room-card-desc">A haven of deep blue silk and emerald marble. This quiet retreat offers the ultimate solo indulgence with a private balcony for morning espresso and a curated artisanal minibar selection.</p>
+                        <div class="room-card-icons">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+                        </div>
+                        <a href="reservation.html" class="btn btn-primary room-card-btn">BOOK NOW</a>
+                    </div>
+                    <!-- Room 3 -->
+                    <div class="room-masonry-card">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=600&auto=format&fit=crop" alt="Emerald Suite">
+                        <div class="room-card-header">
+                            <h3 class="room-card-title">Emerald Suite</h3>
+                            <div class="room-card-line"></div>
+                            <span class="room-card-price">€250</span>
+                        </div>
+                        <p class="room-card-desc">Mastering the art of texture for the discerning traveler. Velvet headboards meet brass accents in this minimalist suite, featuring a personal tablet for seamless, silent in-room service.</p>
+                        <div class="room-card-icons">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+                        </div>
+                        <a href="reservation.html" class="btn btn-primary room-card-btn">BOOK NOW</a>
+                    </div>
+                    <!-- Room 4 -->
+                    <div class="room-masonry-card">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=600&auto=format&fit=crop" alt="The Minimalist">
+                        <div class="room-card-header">
+                            <h3 class="room-card-title">The Minimalist</h3>
+                            <div class="room-card-line"></div>
+                            <span class="room-card-price">€180</span>
+                        </div>
+                        <p class="room-card-desc">Pure monochrome tranquility. Designed for the digital nomad seeking focus, this room pairs high-fidelity acoustics with smart glass privacy, creating a perfect void in the heart of Paris.</p>
+                        <div class="room-card-icons">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+                        </div>
+                        <a href="reservation.html" class="btn btn-primary room-card-btn">BOOK NOW</a>
+                    </div>
+                    <!-- Room 5 -->
+                    <div class="room-masonry-card">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=600&auto=format&fit=crop" alt="Gilded Lounge">
+                        <div class="room-card-header">
+                            <h3 class="room-card-title">Gilded Lounge</h3>
+                            <div class="room-card-line"></div>
+                            <span class="room-card-price">€300</span>
+                        </div>
+                        <p class="room-card-desc">Lavish yet understated. Gold-leaf detailing and a velvet chaise longue provide a regal solo experience, framed by floor-to-ceiling windows capturing the silent majesty of the Seine.</p>
+                        <div class="room-card-icons">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                        </div>
+                        <a href="reservation.html" class="btn btn-primary room-card-btn">BOOK NOW</a>
+                    </div>
+                    <!-- Room 6 -->
+                    <div class="room-masonry-card">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=600&auto=format&fit=crop" alt="Velvet Atelier">
+                        <div class="room-card-header">
+                            <h3 class="room-card-title">Velvet Atelier</h3>
+                            <div class="room-card-line"></div>
+                            <span class="room-card-price">€270</span>
+                        </div>
+                        <p class="room-card-desc">A studio for the modern creative. Soft lighting and a library of French classics invite deep contemplation, offering a Parisian artist's lifestyle refined for the sophisticated esthete.</p>
+                        <div class="room-card-icons">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+                        </div>
+                        <a href="reservation.html" class="btn btn-primary room-card-btn">BOOK NOW</a>
+                    </div>
+                    <!-- Room 7 -->
+                    <div class="room-masonry-card">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=600&auto=format&fit=crop" alt="Azure Retreat">
+                        <div class="room-card-header">
+                            <h3 class="room-card-title">Azure Retreat</h3>
+                            <div class="room-card-line"></div>
+                            <span class="room-card-price">€280</span>
+                        </div>
+                        <p class="room-card-desc">Classic calm meets Parisian chic. A restorative corner featuring a sensory rain shower and aromatherapy, designed to provide the solo traveler with a profound sense of inner peace.</p>
+                        <div class="room-card-icons">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                        </div>
+                        <a href="reservation.html" class="btn btn-primary room-card-btn">BOOK NOW</a>
+                    </div>
+                    <!-- Room 8 -->
+                    <div class="room-masonry-card">
+                        <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=600&auto=format&fit=crop" alt="Marble Haven">
+                        <div class="room-card-header">
+                            <h3 class="room-card-title">Marble Haven</h3>
+                            <div class="room-card-line"></div>
+                            <span class="room-card-price">€350</span>
+                        </div>
+                        <p class="room-card-desc">Architectural luxury in a singular scale. Carrara marble and custom walnut joinery create a minimalist masterpiece, offering a serene and visual feast for the independent visitor.</p>
+                        <div class="room-card-icons">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+                        </div>
+                        <a href="reservation.html" class="btn btn-primary room-card-btn">BOOK NOW</a>
+                    </div>
+                    <!-- Room 9 -->
+                    <div class="room-masonry-card">
+                        <img src="https://images.unsplash.com/photo-1542314831-c6a4d14db48d?q=80&w=600&auto=format&fit=crop" alt="The Silk Room">
+                        <div class="room-card-header">
+                            <h3 class="room-card-title">The Silk Room</h3>
+                            <div class="room-card-line"></div>
+                            <span class="room-card-price">€320</span>
+                        </div>
+                        <p class="room-card-desc">Softness redefined. Draped in pure French silk, this room offers a quiet garden outlook and a bespoke morning newspaper service, perfect for slow mornings and focused evening work.</p>
+                        <div class="room-card-icons">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                        </div>
+                        <a href="reservation.html" class="btn btn-primary room-card-btn">BOOK NOW</a>
+                    </div>
+                    <!-- Room 10 -->
+                    <div class="room-masonry-card">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=600&auto=format&fit=crop" alt="Obsidian Den">
+                        <div class="room-card-header">
+                            <h3 class="room-card-title">Obsidian Den</h3>
+                            <div class="room-card-line"></div>
+                            <span class="room-card-price">€400</span>
+                        </div>
+                        <p class="room-card-desc">Dark, sleek, and perfectly composed. Copper accents and integrated sound systems create a cinematic atmosphere for the solo traveler who appreciates drama and a bespoke cocktail at dusk.</p>
+                        <div class="room-card-icons">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+                        </div>
+                        <a href="reservation.html" class="btn btn-primary room-card-btn">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="room-content" id="double">
+                <div class="double-header">
+                    <h1 class="double-title">Double Rooms</h1>
+                    <p class="double-desc">Discover our collection of sanctuary-inspired double rooms. Each space is meticulously curated to reflect the timeless elegance of Parisian architecture with a contemporary soul.</p>
+                </div>
+
+                <!-- Row 1 -->
+                <div class="double-row-hero">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1000&auto=format&fit=crop" alt="Celestial Suite">
+                    <div class="double-hero-info">
+                        <span class="double-tag">POPULAR PICK</span>
+                        <h2 class="double-room-name">Celestial Suite</h2>
+                        <p class="double-hero-desc">A private sanctuary featuring hand-painted frescos and a private balcony overlooking the Tuileries Gardens. Pure Parisian poetry.</p>
+                        <p class="double-price">€650 / night</p>
+                        <a href="reservation.html" class="btn btn-primary btn-sm" style="width:fit-content;">BOOK NOW</a>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="double-row-2">
+                    <div class="double-card">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=800&auto=format&fit=crop" alt="Imperial Double" class="img-landscape">
+                        <div class="double-card-header">
+                            <h3>Imperial Double</h3>
+                            <span class="price" style="font-weight: 600; color: var(--color-primary);">€520</span>
+                        </div>
+                        <p>Embracing Art Deco heritage with gilded mirrors and silk coverings. A masterpiece of historical refinement.</p>
+                        <a href="reservation.html" class="btn btn-primary btn-sm">BOOK NOW</a>
+                    </div>
+                    <div class="double-card">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=600&auto=format&fit=crop" alt="Eiffel Veranda" class="img-portrait">
+                        <div class="double-card-header">
+                            <h3>Eiffel Veranda</h3>
+                        </div>
+                        <p>An intimate retreat offering an unobstructed Eiffel view. Watch the iron lady sparkle from your private wrought-iron veranda.</p>
+                        <div class="price-btn-row">
+                            <span class="price">€580</span>
+                            <a href="reservation.html" class="btn btn-primary btn-sm">BOOK NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 (Lumiere Loft removed as requested) -->
+
+                <!-- Row 4 -->
+                <div class="double-row-3">
+                    <div class="double-card">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=600&auto=format&fit=crop" alt="Azure Sanctuary">
+                        <div class="double-card-header">
+                            <h3>Azure Sanctuary</h3>
+                        </div>
+                        <p>Curated with rare emerald marble accents and deep teal velvets for a mood of calm, modern sophistication.</p>
+                        <span class="price" style="display:block; margin-bottom:1rem; font-weight:600; color:var(--color-primary);">€490</span>
+                        <a href="reservation.html" class="btn btn-primary btn-full">BOOK NOW</a>
+                    </div>
+                    <div class="double-card">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=600&auto=format&fit=crop" alt="Haussmann Classic">
+                        <div class="double-card-header">
+                            <h3>Haussmann Classic</h3>
+                        </div>
+                        <p>Preserving original 19th-century heritage architecture paired with state-of-the-art contemporary comfort.</p>
+                        <span class="price" style="display:block; margin-bottom:1rem; font-weight:600; color:var(--color-primary);">€450</span>
+                        <a href="reservation.html" class="btn btn-primary btn-full">BOOK NOW</a>
+                    </div>
+                    <div class="double-card">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=600&auto=format&fit=crop" alt="Mirror Reflections">
+                        <div class="double-card-header">
+                            <h3>Mirror Reflections</h3>
+                        </div>
+                        <p>Floor-to-ceiling mirrors create an infinite play of light, reflecting the soul of the Marais Quarter.</p>
+                        <span class="price" style="display:block; margin-bottom:1rem; font-weight:600; color:var(--color-primary);">€480</span>
+                        <a href="reservation.html" class="btn btn-primary btn-full">BOOK NOW</a>
+                    </div>
+                </div>
+
+                <!-- Row 5 -->
+                <div class="double-row-4">
+                    <div class="double-card-small">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=400&auto=format&fit=crop" alt="Petite Terrace">
+                        <h4>Petite Terrace</h4>
+                        <p>A charming courtyard-facing room with a private stone terrace.</p>
+                        <span class="price">€400</span>
+                        <a href="reservation.html" class="btn btn-primary btn-full">BOOK NOW</a>
+                    </div>
+                    <div class="double-card-small">
+                        <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=400&auto=format&fit=crop" alt="The Morning Sun">
+                        <h4>The Morning Sun</h4>
+                        <p>Oriented to catch the golden hour, featuring sun-drenched oak floors.</p>
+                        <span class="price">€420</span>
+                        <a href="reservation.html" class="btn btn-primary btn-full">BOOK NOW</a>
+                    </div>
+                    <div class="double-card-small">
+                        <img src="https://images.unsplash.com/photo-1542314831-c6a4d14db48d?q=80&w=400&auto=format&fit=crop" alt="Marble Studio">
+                        <h4>Marble Studio</h4>
+                        <p>A sleek, oversized space defined by floor-to-ceiling Phidias marble.</p>
+                        <span class="price">€450</span>
+                        <a href="reservation.html" class="btn btn-primary btn-full">BOOK NOW</a>
+                    </div>
+                    <div class="double-card-small">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=400&auto=format&fit=crop" alt="Writer's Alcove">
+                        <h4>Writer's Alcove</h4>
+                        <p>Tucked away in the quietest wing, featuring an antique mahogany desk.</p>
+                        <span class="price">€410</span>
+                        <a href="reservation.html" class="btn btn-primary btn-full">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="room-content" id="family">
+                <div class="family-header">
+                    <span class="family-supertitle">ACCOMMODATIONS</span>
+                    <h1 class="family-title">Family Suites</h1>
+                    <p class="family-desc">Experience the art of Parisian living designed for all generations. Our suites offer expansive interconnected spaces, artistic touches, and bespoke services tailored for families.</p>
+                </div>
+
+                <!-- Row 1 -->
+                <div class="family-row-1">
+                    <div class="family-card-large">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1200&auto=format&fit=crop" alt="Heritage Family Suite">
+                        <div class="family-card-header">
+                            <h2>Heritage Family Suite</h2>
+                            <span class="price-green">€1,250 / night</span>
+                        </div>
+                        <p>A masterclass in French elegance with integrated smart home systems. Features two interconnected master bedrooms and a private family library lounge. Child-friendly amenities include a dedicated nursery nook and hand-carved oak furniture designed for safety and style.</p>
+                        <a href="reservation.html" class="btn btn-outline-family">Reserve Suite</a>
+                    </div>
+                    <div class="family-card-medium">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Playful Parisian Suite">
+                        <div class="family-card-header-col">
+                            <h2>Playful Parisian Suite</h2>
+                            <span class="price-green">€850 / night</span>
+                        </div>
+                        <p>Designed with younger guests in mind, featuring a dedicated whimsical play area and soft, child-safe designer furniture. The layout seamlessly connects to the primary bedroom through a sound-proofed vestibule.</p>
+                        <a href="reservation.html" class="btn btn-outline-family btn-full">Reserve Suite</a>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="family-row-2">
+                    <!-- Left Column -->
+                    <div class="family-card-side">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=600&auto=format&fit=crop" alt="Connecté Collection">
+                        <div class="family-card-header-col">
+                            <h2>Connecté Collection</h2>
+                            <span class="price-green">€950 / night</span>
+                        </div>
+                        <p>Seamlessly integrated smart home features within a classic aesthetic. Ideal for modern families needing high-speed connectivity for work and play, with spacious interconnected common areas for movie nights.</p>
+                        <a href="reservation.html" class="btn btn-outline-family btn-full">Reserve Suite</a>
+                    </div>
+                    <!-- Right Column Grid -->
+                    <div class="family-grid-right">
+                        <div class="family-card-box">
+                            <div class="box-header">
+                                <h3>The Garden Alcove</h3>
+                                <span class="price-green">€780</span>
+                            </div>
+                            <p>Direct access to our private inner courtyard with child-safe glass barriers. Offers a serene escape with separate yet adjacent sleeping quarters, perfect for families seeking both proximity and peace.</p>
+                            <a href="#" class="explore-link">EXPLORE SPACE &rarr;</a>
+                            <a href="reservation.html" class="btn btn-primary btn-full">RESERVE SUITE</a>
+                        </div>
+                        <div class="family-card-box">
+                            <div class="box-header">
+                                <h3>Rooftop Horizon</h3>
+                                <span class="price-green">€1,100</span>
+                            </div>
+                            <p>Panoramic views of the Eiffel Tower with a large, child-proofed terrace for family breakfasts. The suite features smart climate control and expansive open-plan living for maximum family interaction.</p>
+                            <a href="#" class="explore-link">EXPLORE SPACE &rarr;</a>
+                            <a href="reservation.html" class="btn btn-primary btn-full">RESERVE SUITE</a>
+                        </div>
+                        <div class="family-card-wide">
+                            <img src="https://images.unsplash.com/photo-1618219740975-d40978bb7378?q=80&w=800&auto=format&fit=crop" alt="Artisan Loft Suite">
+                            <div class="wide-info">
+                                <h2>Artisan Loft Suite</h2>
+                                <p>Double-height ceilings and a custom-made mezzanine play area for kids. Features local Parisian artwork and a spacious interconnected floor plan that allows parents to relax while children play safely within sight.</p>
+                                <div class="wide-footer">
+                                    <span class="price-green">€920 / night</span>
+                                    <a href="reservation.html" class="btn btn-primary btn-sm">RESERVE SUITE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="family-row-3">
+                    <div class="family-card-small">
+                        <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=600&auto=format&fit=crop" alt="Classic Duo Suite">
+                        <h4>Classic Duo Suite</h4>
+                        <span class="price-green">€750</span>
+                    </div>
+                    <div class="family-card-small">
+                        <img src="https://images.unsplash.com/photo-1581452267863-74a9eb120364?q=80&w=600&auto=format&fit=crop" alt="Salon d'Honneur">
+                        <h4>Salon d'Honneur</h4>
+                        <span class="price-green">€1,400</span>
+                    </div>
+                    <div class="family-card-small">
+                        <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?q=80&w=600&auto=format&fit=crop" alt="The Twin Nest">
+                        <h4>The Twin Nest</h4>
+                        <span class="price-green">€680</span>
+                    </div>
+                    <div class="family-card-small">
+                        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=600&auto=format&fit=crop" alt="Wellness Family Suite">
+                        <h4>Wellness Family Suite</h4>
+                        <span class="price-green">€1,850</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="room-content" id="executive">
+                <div class="room-grid" style="margin-top: 2rem;">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1000&auto=format&fit=crop" alt="Executive Suite" class="room-img">
+                    <div class="room-info">
+                        <h2 class="room-name">Executive Panorama</h2>
+                        <p class="room-text">The pinnacle of luxury. Our executive suite offers breathtaking panoramic views, a private terrace, a dedicated workspace, and unparalleled personalized service.</p>
+                        <a href="reservation.html" class="btn btn-primary">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container newsletter-container">
+            <span class="family-supertitle" style="margin-bottom: 1rem;">STAY CONNECTED</span>
+            <h2 class="newsletter-title" style="font-style: normal;">Join the GrandVista Circle</h2>
+            <p class="newsletter-desc">Receive exclusive invitations to family events, seasonal suite offers, and culinary stories from our Parisian kitchen.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Your Email Address" required style="border-radius: 0; border: none; border-bottom: 1px solid #ccc; background: transparent; padding-left: 0;">
+                <button type="submit" class="btn btn-primary" style="border-radius: 30px;">SUBSCRIBE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">GrandVista</h3>
+                <p>Parisian culinary excellence. Since 1924, we serve the passion for taste and respect for the product.</p>
+                <div class="social-icons">
+                    <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>EXPLORE</h4>
+                    <a href="index.html">Home</a>
+                    <a href="story.html">Our Story</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="rooms.html">Rooms</a>
+                </div>
+                <div class="link-group">
+                    <h4>INFORMATION</h4>
+                    <a href="#">Contact</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Legal Mentions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2024 GRANDVISTA. ALL RIGHTS RESERVED.</p>
+            <p>DESIGNED WITH EXCELLENCE</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

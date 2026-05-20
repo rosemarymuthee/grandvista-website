@@ -16,15 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Menu Tab Switching
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const menuContents = document.querySelectorAll('.menu-content');
+    // Rooms Tab Switching
+    const roomTabBtns = document.querySelectorAll('.room-tab');
+    const roomContents = document.querySelectorAll('.room-content');
 
-    tabBtns.forEach(btn => {
+    roomTabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             // Remove active class from all buttons and contents
-            tabBtns.forEach(b => b.classList.remove('active'));
-            menuContents.forEach(c => c.classList.remove('active'));
+            roomTabBtns.forEach(b => b.classList.remove('active'));
+            roomContents.forEach(c => c.classList.remove('active'));
 
             // Add active class to clicked button
             btn.classList.add('active');
