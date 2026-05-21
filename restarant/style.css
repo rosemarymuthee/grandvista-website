@@ -135,6 +135,15 @@ h1, h2, h3, h4 {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(11, 48, 91, 0.2);
 }
+.btn-secondary {
+    background-color: #5c7499; /* muted grey/blue */
+    color: var(--color-white);
+}
+.btn-secondary:hover {
+    background-color: #4b6184;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(92, 116, 153, 0.2);
+}
 
 .btn-outline {
     background-color: transparent;
@@ -770,11 +779,17 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
-.room-masonry-card img {
+.room-masonry-card .room-img-wrap {
     width: 100%;
     border-radius: 4px;
     margin-bottom: 1rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+.room-masonry-card .room-img-wrap img {
+    width: 100%;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .room-card-header {
@@ -856,11 +871,18 @@ h1, h2, h3, h4 {
     align-items: center;
     margin-bottom: 5rem;
 }
-.double-row-hero img {
+.double-row-hero .room-img-wrap {
     width: 100%;
     border-radius: 12px;
     height: 500px;
+    overflow: hidden;
+}
+.double-row-hero .room-img-wrap img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .double-hero-info {
     display: flex;
@@ -899,11 +921,18 @@ h1, h2, h3, h4 {
     margin-bottom: 5rem;
     align-items: end;
 }
-.double-row-2 img {
+.double-row-2 .room-img-wrap {
     width: 100%;
     border-radius: 12px;
     margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.double-row-2 .room-img-wrap img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .img-landscape {
     height: 350px;
@@ -945,12 +974,19 @@ h1, h2, h3, h4 {
     gap: 2rem;
     margin-bottom: 5rem;
 }
-.double-row-3 img {
+.double-row-3 .room-img-wrap {
     width: 100%;
     height: 250px;
-    object-fit: cover;
     border-radius: 12px;
     margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.double-row-3 .room-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .double-row-4 {
@@ -965,12 +1001,19 @@ h1, h2, h3, h4 {
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
     text-align: left;
 }
-.double-card-small img {
+.double-card-small .room-img-wrap {
     width: 100%;
     height: 150px;
-    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
+    overflow: hidden;
+}
+.double-card-small .room-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .double-card-small h4 {
     font-family: var(--font-heading);
@@ -1056,19 +1099,33 @@ h1, h2, h3, h4 {
     gap: 3rem;
     margin-bottom: 5rem;
 }
-.family-card-large img {
+.family-card-large .room-img-wrap {
     width: 100%;
     height: 400px;
-    object-fit: cover;
     border-radius: 16px;
     margin-bottom: 1.5rem;
+    overflow: hidden;
 }
-.family-card-medium img {
+.family-card-large .room-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.family-card-medium .room-img-wrap {
     width: 100%;
     height: 300px;
-    object-fit: cover;
     border-radius: 16px;
     margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.family-card-medium .room-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .family-card-header {
     display: flex;
@@ -1103,12 +1160,19 @@ h1, h2, h3, h4 {
     gap: 2rem;
     margin-bottom: 5rem;
 }
-.family-card-side img {
+.family-card-side .room-img-wrap {
     width: 100%;
     height: 350px;
-    object-fit: cover;
     border-radius: 16px;
     margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.family-card-side .room-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .family-grid-right {
     display: grid;
@@ -1152,10 +1216,17 @@ h1, h2, h3, h4 {
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
-.family-card-wide img {
+.family-card-wide .room-img-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.family-card-wide .room-img-wrap img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .wide-info {
     padding: 2rem;
@@ -1178,12 +1249,19 @@ h1, h2, h3, h4 {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
-.family-card-small img {
+.family-card-small .room-img-wrap {
     width: 100%;
     height: 250px;
-    object-fit: cover;
     border-radius: 16px;
     margin-bottom: 1rem;
+    overflow: hidden;
+}
+.family-card-small .room-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .family-card-small h4 {
     font-family: var(--font-heading);
@@ -1517,5 +1595,411 @@ h1, h2, h3, h4 {
     }
     .family-row-3 {
         grid-template-columns: 1fr;
+    }
+}
+
+/* --- Global Room Hover Animations --- */
+.room-masonry-card:hover .room-img-wrap img,
+.double-row-hero:hover .room-img-wrap img,
+.double-card:hover .room-img-wrap img,
+.double-card-small:hover .room-img-wrap img,
+.family-card-large:hover .room-img-wrap img,
+.family-card-medium:hover .room-img-wrap img,
+.family-card-side:hover .room-img-wrap img,
+.family-card-wide:hover .room-img-wrap img,
+.family-card-small:hover .room-img-wrap img {
+    transform: scale(1.05);
+}
+
+/* --- Menu Page Styling --- */
+.menu-page-header {
+    padding: 12rem 0 4rem 0;
+    background-color: var(--color-white);
+}
+
+.menu-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu-main-title {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    color: var(--color-primary);
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.menu-main-desc {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.menu-section {
+    padding: 5rem 0;
+}
+
+.menu-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(11, 48, 91, 0.1);
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+.menu-section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.menu-section-meta {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Grids */
+.menu-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.menu-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* Cards */
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(11, 48, 91, 0.08);
+    border-color: rgba(11, 48, 91, 0.1);
+}
+
+.menu-card-img-wrap {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.menu-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.menu-card:hover .menu-card-img-wrap img {
+    transform: scale(1.05);
+}
+
+.menu-card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.menu-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.75rem;
+}
+
+.menu-card-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin: 0;
+    font-weight: 500;
+}
+
+.menu-card-price {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.menu-card-desc {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Chef's Recommendation & Wine of the Day Banners */
+.menu-banner-dark {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background-color: var(--color-primary);
+    border-radius: 16px;
+    overflow: hidden;
+    color: var(--color-white);
+    box-shadow: 0 10px 30px rgba(11, 48, 91, 0.12);
+    margin-bottom: 4rem;
+}
+
+.menu-banner-content {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-banner-subtitle {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a8c0e0;
+    margin-bottom: 1rem;
+    display: block;
+    font-weight: 600;
+}
+
+.menu-banner-title {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    margin-bottom: 1.8rem;
+    font-weight: 500;
+}
+
+.menu-banner-list {
+    margin-bottom: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.menu-banner-list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.banner-item-label {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #a8c0e0;
+    letter-spacing: 1px;
+}
+
+.banner-item-val {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.menu-banner-img-wrap {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    overflow: hidden;
+}
+
+.menu-banner-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sweet Finishes Dessert Split */
+.menu-dessert-split {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+}
+
+.menu-dessert-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.menu-dessert-desc {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.menu-dessert-note {
+    padding: 2rem;
+    background-color: #f0f4f8;
+    border-left: 4px solid var(--color-secondary);
+    border-radius: 0 12px 12px 0;
+}
+
+.menu-dessert-note-title {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.menu-dessert-note-text {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--color-primary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Wine Card Upright Showcase */
+.wine-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.wine-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(11, 48, 91, 0.08);
+    border-color: rgba(11, 48, 91, 0.1);
+}
+
+.wine-card-img-wrap {
+    width: 100%;
+    height: 320px;
+    background-color: #f5f6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+.wine-card-img-wrap img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.wine-card:hover .wine-card-img-wrap img {
+    transform: scale(1.05);
+}
+
+/* Sommelier Selection banner specific padding adjustment if needed */
+.wine-info-box {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.wine-info-title {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #a8c0e0;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.wine-info-desc {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .menu-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .menu-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .menu-banner-dark {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-banner-content {
+        padding: 3rem;
+    }
+    
+    .menu-banner-img-wrap {
+        height: 350px;
+        min-height: 350px;
+    }
+    
+    .menu-dessert-split {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-page-header {
+        padding: 10rem 0 3rem 0;
+    }
+    
+    .menu-main-title {
+        font-size: 3rem;
+    }
+    
+    .menu-grid-4, .menu-grid-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .menu-section-title {
+        font-size: 2rem;
+    }
+    
+    .menu-banner-title {
+        font-size: 2.2rem;
     }
 }
